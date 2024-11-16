@@ -33,7 +33,7 @@ pipeline {
             sh '''
             echo "Test stage"
             ls build/index.html && echo "File exists" || echo "File does not exist"
-
+            npm test
             '''
             }
         }
