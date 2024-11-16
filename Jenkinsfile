@@ -32,6 +32,8 @@ pipeline {
             steps{
             sh '''
             echo "Test stage"
+            ls /path/to/file && echo "File exists" || echo "File does not exist"
+
             '''
             }
         }
